@@ -115,8 +115,8 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
             drawableSwell.UpdateHitProgress += animateSwellProgress;
             drawableSwell.ApplyCustomUpdateState += updateStateTransforms;
 
-            expandingRing.Colour = colours.YellowLight;
-            targetRing.BorderColour = colours.YellowDark.Opacity(0.25f);
+            expandingRing.Colour = colours.TaikoDrumRoll;
+            targetRing.BorderColour = colours.TaikoDrumRoll.Opacity(0.25f);
         }
 
         protected virtual Drawable CreateCentreCircle()

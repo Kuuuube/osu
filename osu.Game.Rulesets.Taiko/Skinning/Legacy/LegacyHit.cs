@@ -2,8 +2,8 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using osu.Framework.Allocation;
+using osu.Game.Graphics;
 using osu.Game.Skinning;
-using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Taiko.Skinning.Legacy
 {
@@ -17,12 +17,12 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Legacy
         }
 
         [BackgroundDependencyLoader]
-        private void load()
+        private void load(OsuColour colours)
         {
             AccentColour = LegacyColourCompatibility.DisallowZeroAlpha(
                 component == TaikoSkinComponents.CentreHit
-                    ? new Color4(235, 69, 44, 255)
-                    : new Color4(67, 142, 172, 255));
+                    ? colours.TaikoPink
+                    : colours.TaikoBlue);
         }
     }
 }

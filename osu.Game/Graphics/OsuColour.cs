@@ -302,6 +302,13 @@ namespace osu.Game.Graphics
             return Gray(brightness > 0.5f ? 0.2f : 0.9f);
         }
 
+        public readonly Color4 TaikoPink = Color4Extensions.FromHex(@"7f4f00");
+        public readonly Color4 TaikoBlue = Color4Extensions.FromHex(@"6d7f00");
+        public readonly Color4 TaikoPinkDarker = Color4Extensions.FromHex(@"7f4f00");
+        public readonly Color4 TaikoBlueDarker = Color4Extensions.FromHex(@"6d7f00");
+        public readonly Color4 TaikoDrumRoll = Color4Extensions.FromHex(@"33413c");
+
+
         public readonly Color4 TeamColourRed = Color4Extensions.FromHex("#AA1414");
         public readonly Color4 TeamColourBlue = Color4Extensions.FromHex("#1462AA");
 

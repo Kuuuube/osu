@@ -61,7 +61,7 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Legacy
                 },
             };
 
-            AccentColour = colours.YellowDark;
+            AccentColour = colours.TaikoDrumRoll;
         }
 
         protected override void LoadComplete()

@@ -20,7 +20,7 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
         [BackgroundDependencyLoader]
         private void load(OsuColour colours)
         {
-            AccentColour = colours.YellowDark;
+            AccentColour = colours.TaikoDrumRoll;
         }
 
         /// <summary>

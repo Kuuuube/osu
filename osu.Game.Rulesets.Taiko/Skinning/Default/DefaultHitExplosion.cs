@@ -62,7 +62,7 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
                 return;
 
             bool isRim = (judgedObject?.HitObject as Hit)?.Type == HitType.Rim;
-            body.Colour = isRim ? colours.BlueDarker : colours.PinkDarker;
+            body.Colour = isRim ? colours.TaikoBlueDarker : colours.TaikoPinkDarker;
         }
 
         public void Animate(DrawableHitObject drawableHitObject)

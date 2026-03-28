@@ -3,8 +3,8 @@
 
 using System.Linq;
 using osu.Framework.Bindables;
-using osu.Framework.Extensions.Color4Extensions;
 using osu.Game.Audio;
+using osu.Game.Graphics;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osuTK.Graphics;
@@ -28,8 +28,10 @@ namespace osu.Game.Rulesets.Taiko.Objects
 
         public Bindable<Color4> DisplayColour { get; } = new Bindable<Color4>(COLOUR_CENTRE);
 
-        public static readonly Color4 COLOUR_CENTRE = Color4Extensions.FromHex(@"bb1177");
-        public static readonly Color4 COLOUR_RIM = Color4Extensions.FromHex(@"2299bb");
+        private static OsuColour colours = new();
+
+        public static readonly Color4 COLOUR_CENTRE = colours.TaikoPink;
+        public static readonly Color4 COLOUR_RIM = colours.TaikoBlue;
 
         public Hit()
         {

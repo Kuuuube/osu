@@ -128,8 +128,8 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
                 centre.Texture = textures.Get(@"Gameplay/taiko/taiko-drum-inner");
                 centreHit.Texture = textures.Get(@"Gameplay/taiko/taiko-drum-inner-hit");
 
-                rimHit.Colour = colours.Blue;
-                centreHit.Colour = colours.Pink;
+                rimHit.Colour = colours.TaikoBlue;
+                centreHit.Colour = colours.TaikoPink;
             }
 
             public bool OnPressed(KeyBindingPressEvent<TaikoAction> e)

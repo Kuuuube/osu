@@ -46,7 +46,7 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
             EdgeEffect = new EdgeEffectParameters
             {
                 Type = EdgeEffectType.Glow,
-                Colour = type == HitType.Rim ? colours.BlueDarker : colours.PinkDarker,
+                Colour = type == HitType.Rim ? colours.TaikoBlueDarker : colours.TaikoPinkDarker,
                 Radius = 60,
             };
         }
