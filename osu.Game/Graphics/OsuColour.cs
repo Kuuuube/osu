@@ -17,6 +17,25 @@ namespace osu.Game.Graphics
 {
     public class OsuColour
     {
+        //
+        //
+        // Edit these colors to change the taiko colors:
+        //
+        //
+        public readonly Color4 TaikoPink = Color4Extensions.FromHex("#7f4f00"); // This is the main color used for red objects
+        public readonly Color4 TaikoBlue = Color4Extensions.FromHex("#6d7f00"); // This is the main color used for blue objects
+        public readonly Color4 TaikoPinkDarker = Color4Extensions.FromHex("#7f4f00"); // This is the accent/border/hit color used for red objects
+        public readonly Color4 TaikoBlueDarker = Color4Extensions.FromHex("#6d7f00"); // This is the accent/border/hit color used for blue objects
+        public readonly Color4 TaikoDrumRoll = Color4Extensions.FromHex("#33413c"); // This is the main color used for drumroll objects
+        public readonly Color4 TaikoDrumRollBorder = Color4Extensions.FromHex("#33413c"); // This is the border color used for drumroll objects
+        public readonly double TaikoDrumRollBorderOpacity = 0.25; // This is the opacity used for `TaikoDrumRollBorder`. 0 = transparent, 1 = solid
+
+
+
+
+
+
+
         public static Color4 Gray(float amt) => new Color4(amt, amt, amt, 1f);
         public static Color4 Gray(byte amt) => new Color4(amt, amt, amt, 255);
 
@@ -301,13 +320,6 @@ namespace osu.Game.Graphics
             float brightness = 0.299f * backgroundColour.R + 0.587f * backgroundColour.G + 0.114f * backgroundColour.B;
             return Gray(brightness > 0.5f ? 0.2f : 0.9f);
         }
-
-        public readonly Color4 TaikoPink = Color4Extensions.FromHex(@"7f4f00");
-        public readonly Color4 TaikoBlue = Color4Extensions.FromHex(@"6d7f00");
-        public readonly Color4 TaikoPinkDarker = Color4Extensions.FromHex(@"7f4f00");
-        public readonly Color4 TaikoBlueDarker = Color4Extensions.FromHex(@"6d7f00");
-        public readonly Color4 TaikoDrumRoll = Color4Extensions.FromHex(@"33413c");
-
 
         public readonly Color4 TeamColourRed = Color4Extensions.FromHex("#AA1414");
         public readonly Color4 TeamColourBlue = Color4Extensions.FromHex("#1462AA");

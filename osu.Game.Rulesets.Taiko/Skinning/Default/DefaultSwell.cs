@@ -116,7 +116,7 @@ namespace osu.Game.Rulesets.Taiko.Skinning.Default
             drawableSwell.ApplyCustomUpdateState += updateStateTransforms;
 
             expandingRing.Colour = colours.TaikoDrumRoll;
-            targetRing.BorderColour = colours.TaikoDrumRoll.Opacity(0.25f);
+            targetRing.BorderColour = colours.TaikoDrumRollBorder.Opacity((float)colours.TaikoDrumRollBorderOpacity);
         }
 
         protected virtual Drawable CreateCentreCircle()
