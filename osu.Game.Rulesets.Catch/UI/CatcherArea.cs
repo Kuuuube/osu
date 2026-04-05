@@ -41,7 +41,7 @@ namespace osu.Game.Rulesets.Catch.UI
         /// <c>1</c> when only right button is pressed.
         /// <c>0</c> when none or both left and right buttons are pressed.
         /// </summary>
-        private int currentDirection;
+        public int CurrentDirection;
 
         // TODO: support replay rewind
         private bool lastHyperDashState;
@@ -88,7 +88,7 @@ namespace osu.Game.Rulesets.Catch.UI
 
             SetCatcherPosition(
                 replayState?.CatcherX ??
-                (float)(Catcher.X + Catcher.Speed * currentDirection * Clock.ElapsedFrameTime));
+                (float)(Catcher.X + Catcher.Speed * CurrentDirection * Clock.ElapsedFrameTime));
         }
 
         protected override void UpdateAfterChildren()
@@ -137,11 +137,11 @@ namespace osu.Game.Rulesets.Catch.UI
             switch (e.Action)
             {
                 case CatchAction.MoveLeft:
-                    currentDirection--;
+                    CurrentDirection--;
                     return true;
 
                 case CatchAction.MoveRight:
-                    currentDirection++;
+                    CurrentDirection++;
                     return true;
 
                 case CatchAction.Dash:
@@ -157,11 +157,11 @@ namespace osu.Game.Rulesets.Catch.UI
             switch (e.Action)
             {
                 case CatchAction.MoveLeft:
-                    currentDirection++;
+                    CurrentDirection++;
                     break;
 
                 case CatchAction.MoveRight:
-                    currentDirection--;
+                    CurrentDirection--;
                     break;
 
                 case CatchAction.Dash:
