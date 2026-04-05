@@ -80,7 +80,7 @@ namespace osu.Game.Rulesets.Catch.Mods
 
         private void easeTo(IFrameBasedClock clock, DrawableCatchHitObject hitObject, Vector2 destination, bool offsetObject)
         {
-            double dampLength = Interpolation.Lerp(3000, 40, AttractionStrength.Value);
+            double dampLength = Interpolation.Lerp(3000, 1, AttractionStrength.Value);
 
             float x = (float)Interpolation.DampContinuously(hitObject.Position.X, destination.X, dampLength, clock.ElapsedFrameTime);
 
